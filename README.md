@@ -1,8 +1,8 @@
 # Speech Emotion Analyzer
 
-The idea behind creating this project was to build a sentiment analysis engine that could detect emotions from the speech we have with each other all the time. Nowadays personalization is something that is needed in all the things we experience everyday. 
+* The idea behind creating this project was to build a sentiment analysis engine that could detect emotions from the speech we have with each other all the time. Nowadays personalization is something that is needed in all the things we experience everyday. 
 
-So why not have a emotion detector that will guage your emotions and in the future recommend you different things based on your mood. 
+* So why not have a emotion detector that will guage your emotions and in the future recommend you different things based on your mood. 
 This can be used by multiple industries to offer different services like marketing comapny suggesting you to buy products based on your emotions, automotive industry can detect the persons emotions and adjust the speed of autonomous cars as required to avoid any collisions etc.
 
 ## Analyzing audio signals
@@ -21,7 +21,37 @@ This dataset contains around 500 audio files recorded by 4 different male actors
 
 ### Audio files:
 Tested out the audio files by plotting out the waveform and a spectrogram to see the sample audio files.<br>
+**Waveform**
 ![](images/wave.png?raw=true)
 <br>
-Spectrogram<br>
+**Spectrogram**<br>
 ![](images/spec.png?raw=true)
+<br>
+
+### Feature Extraction
+The next step involves extracting the features from the audio files which will help our model learn between these audio files.
+For feature extraction we make use of the [**LibROSA**](https://librosa.github.io/librosa/) library in python which is one of the libraries used for audio analysis. 
+<br>
+![](images/feature.png?raw=true)
+<br>
+* Here there are some things to note. While extracting the features, all the audio files have been timed for 3 seconds to get equal number of features. 
+* The sampling rate of each file is doubled keeping sampling frequency constant to get more features which will help classify the audio file when the size of dataset is small.
+
+The extracted features looks as follows:
+<br>
+![](images/feature2.png?raw=true)
+<br>
+
+These are array of values with lables appended to them. 
+
+### Building Models
+
+Since the project is a classification problem, Convolution Neural Network seems the obivious choice. We also built Multilayer perceptrons and Long Short Term Memory models but they under-performed with very low accuracies which couldn't pass the test while predicting the right emotions.
+
+Building and tuning a model is a very time consuming process. The idea is to always start small without adding too many layers just for the sake of making it complex. After testing out with layers, the model which gave the max validation accuracy against test data was little more than 70%
+<br>
+![](images/cnn.png?raw=true)
+<br>
+
+
+
