@@ -57,14 +57,23 @@ Building and tuning a model is a very time consuming process. The idea is to alw
 
 ## Predictions
 
-After tuning the model, tested it out by predicting the emotions for the test data. For a model with the given accuracy these are the actual vs predicted values.
+After tuning the model, tested it out by predicting the emotions for the test data. For a model with the given accuracy these are a sample of the actual vs predicted values.
 <br>
 <br>
 ![](images/predict.png?raw=true)
 <br>
 
 ## Testing out with live voices.
+In order to test out our model on voices that were completely different than what we have in our training and test data, we recorded our own voices with dfferent emotions and predicted the outcomes. You can see the results below:
+The audio contained a male voice which said **"This coffee sucks"** in a angry tone.
+<br>
+![](images/livevoice.png?raw=true)
+<br>
+<br>
+![](images/livevoice2.png?raw=true)
+<br>
 
-
+**As you can see that the model has predicted it very accurately.**
 
 ## Conclusion
+Building the model was a challenging task as it involved lot of trail and error methods, tuning etc. The model is very well trained to distinguish between male and female voices and it distinguishes with 100% accuracy. The model is still being tuned to detect emotions with more than 70% accuracy which is achievable by increasing the size of the dataset.
