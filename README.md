@@ -38,9 +38,13 @@ For feature extraction we make use of the [**LibROSA**](https://librosa.github.i
 * Here there are some things to note. While extracting the features, all the audio files have been timed for 3 seconds to get equal number of features. 
 * The sampling rate of each file is doubled keeping sampling frequency constant to get more features which will help classify the audio file when the size of dataset is small.
 <br>
-**The extracted features looks as follows:**
+
+**The extracted features looks as follows**
+
 <br>
+
 ![](images/feature2.png?raw=true)
+
 <br>
 
 These are array of values with lables appended to them. 
