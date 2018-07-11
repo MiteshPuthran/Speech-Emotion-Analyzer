@@ -77,7 +77,7 @@ The audio contained a male voice which said **"This coffee sucks"** in a angry t
 ![](images/livevoice2.PNG?raw=true)
 <br>
 
-**As you can see that the model has predicted the male voice and emotion very accurately.**
+### As you can see that the model has predicted the male voice and emotion very accurately in the image above.
 
 ## Conclusion
 Building the model was a challenging task as it involved lot of trail and error methods, tuning etc. The model is very well trained to distinguish between male and female voices and it distinguishes with 100% accuracy. The model is still being tuned to detect emotions with more than 70% accuracy which is achievable by increasing the size of the dataset.
