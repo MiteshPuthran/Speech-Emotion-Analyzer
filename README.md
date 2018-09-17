@@ -12,7 +12,7 @@ This can be used by multiple industries to offer different services like marketi
 
 ### Datasets:
 Made use of two different datasets:
-1. [RAVDESS](http://neuron.arts.ryerson.ca/ravdess/?f=3).
+1. [RAVDESS](https://zenodo.org/record/1188976).
 This dataset includes around 1500 audio file input from 24 different actors. 12 male and 12 female where these actors record short audios in 8 different emotions i.e 1 = neutral, 2 = calm, 3 = happy, 4 = sad, 5 = angry, 6 = fearful, 7 = disgust, 8 = surprised.<br>
 Each audio file is named in such a way that the 7th character is consistent with the different emotions that they represent.
 
