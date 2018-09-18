@@ -79,7 +79,7 @@ The audio contained a male voice which said **"This coffee sucks"** in a angry t
 
 ### As you can see that the model has predicted the male voice and emotion very accurately in the image above.
 
-## NOTE: If you are using the model directly and want to decode the output of the model ranging from 0 to 9 then the following list will help you.
+## NOTE: If you are using the model directly and want to decode the output ranging from 0 to 9 then the following list will help you.
 
 0 - female_angry <br>
 1 - female_calm <br>
