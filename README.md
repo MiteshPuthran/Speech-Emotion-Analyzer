@@ -81,16 +81,16 @@ The audio contained a male voice which said **"This coffee sucks"** in a angry t
 
 ## NOTE: If you are using the model directly and want to decode the output of the model ranging from 0 to 9 then the following list will help you.
 
-0 - female_angry
-1 - female_calm
-2 - female_fearful
-3 - female_happy
-4 - female_sad
-5 - male_angry
-6 - male_calm
-7 - male_fearful
-8 - male_happy
-9 - male_sad
+0 - female_angry <br>
+1 - female_calm <br>
+2 - female_fearful <br>
+3 - female_happy <br>
+4 - female_sad <br>
+5 - male_angry <br>
+6 - male_calm <br>
+7 - male_fearful <br>
+8 - male_happy <br>
+9 - male_sad <br>
 
 ## Conclusion
 Building the model was a challenging task as it involved lot of trail and error methods, tuning etc. The model is very well trained to distinguish between male and female voices and it distinguishes with 100% accuracy. The model was tuned to detect emotions with more than 70% accuracy. Accuracy can be increased by including more audio files for training.
