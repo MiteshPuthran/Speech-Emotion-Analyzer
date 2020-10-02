@@ -38,6 +38,9 @@ For feature extraction we make use of the [**LibROSA**](https://librosa.github.i
 * Here there are some things to note. While extracting the features, all the audio files have been timed for 3 seconds to get equal number of features. 
 * The sampling rate of each file is doubled keeping sampling frequency constant to get more features which will help classify the audio file when the size of dataset is small.
 <br>
+the features are then trained using the very own neural network.
+
+mfcc, mel and spectogram features were experimented for this purpose.
 
 **The extracted features looks as follows**
 
@@ -66,6 +69,7 @@ After tuning the model, tested it out by predicting the emotions for the test da
 <br>
 ![](images/predict.png?raw=true)
 <br>
+to get good acuuracy use the audio that is convert to mono , it doesnot work with stereo audio.
 
 ## Testing out with live voices.
 In order to test out our model on voices that were completely different than what we have in our training and test data, we recorded our own voices with dfferent emotions and predicted the outcomes. You can see the results below:
