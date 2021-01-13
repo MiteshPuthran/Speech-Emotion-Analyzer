@@ -39,6 +39,9 @@ For feature extraction we make use of the [**LibROSA**](https://librosa.github.i
 * Here there are some things to note. While extracting the features, all the audio files have been timed for 3 seconds to get equal number of features. 
 * The sampling rate of each file is doubled keeping sampling frequency constant to get more features which will help classify the audio file when the size of dataset is small.
 <br>
+the features are then trained using the very own neural network.
+
+mfcc, mel and spectogram features were experimented for this purpose.
 
 **The extracted features looks as follows**
 
@@ -67,6 +70,7 @@ After tuning the model, tested it out by predicting the emotions for the test da
 <br>
 ![](images/predict.png?raw=true)
 <br>
+to get good acuuracy use the audio that is convert to mono , it doesnot work with stereo audio.
 
 ## Testing out with live voices.
 In order to test out our model on voices that were completely different than what we have in our training and test data, we recorded our own voices with dfferent emotions and predicted the outcomes. You can see the results below:
@@ -92,6 +96,10 @@ The audio contained a male voice which said **"This coffee sucks"** in a angry t
 7 - male_fearful <br>
 8 - male_happy <br>
 9 - male_sad <br>
+
+to get better accuracy its preferred to train with 4 classes.
+they are;
+happy , sad - male, female
 
 ## Conclusion
 Building the model was a challenging task as it involved lot of trail and error methods, tuning etc. The model is very well trained to distinguish between male and female voices and it distinguishes with 100% accuracy. The model was tuned to detect emotions with more than 70% accuracy. Accuracy can be increased by including more audio files for training.
