@@ -7,7 +7,8 @@ This can be used by multiple industries to offer different services like marketi
 
 ## Analyzing audio signals
 ![](images/joomla_speech_prosody.png?raw=true)
-©joomla_speech_prosody
+
+[©Fabien_Ringeval_PhD_Thesis](https://drive.google.com/file/d/0B2V_I9XKBODhcEtZV1lRWW1fYTg/view).
 <br>
 
 ### Datasets:
